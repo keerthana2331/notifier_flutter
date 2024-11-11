@@ -11,7 +11,14 @@ class CounterModel extends ChangeNotifier {
   }
 
   void decrement() {
-    _counter--;
+    if (_counter > 0) {
+      _counter--;
+      notifyListeners();
+    }
+  }
+
+  void reset() {
+    _counter = 0;
     notifyListeners();
   }
 }

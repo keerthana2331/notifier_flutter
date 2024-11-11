@@ -1,4 +1,4 @@
-package com.example.change_notifier
+package com.example.todo3_flutter
 
 import io.flutter.embedding.android.FlutterActivity
 

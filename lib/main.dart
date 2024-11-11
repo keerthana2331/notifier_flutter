@@ -1,7 +1,7 @@
-import 'package:change_notifier/change_notifier.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'counter_screen.dart';
+import 'counter_page.dart';
+import 'counter_model.dart';
 
 void main() {
   runApp(
@@ -17,8 +17,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: CounterScreen(),
+    return MaterialApp(
+      home: const CounterPage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
